@@ -1,21 +1,24 @@
+import Image from 'next/image'
+
 import Head from 'next/head'
 import Link from 'next/link'
 
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
 import { TextField } from '@/components/Fields'
-import { Logo } from '@/components/Logo'
+
+import logoAndTypeTinybox from '@/images/logos/tb_Logo-Logotype.svg'
 
 export default function Login() {
   return (
     <>
       <Head>
-        <title>Sign In - TaxPal</title>
+        <title>Sign In - tinybox</title>
       </Head>
       <AuthLayout>
         <div className="flex flex-col">
-          <Link href="/" aria-label="Home">
-            <Logo className="h-10 w-auto" />
+          <Link href="#" aria-label="Home">
+            <Image className="h-10 w-auto max-w-3" src={logoAndTypeTinybox} alt="Tinybox Logo" unoptimized />
           </Link>
           <div className="mt-20">
             <h2 className="text-lg font-semibold text-gray-900">
