@@ -4,5 +4,25 @@
       "path": "."
     }
   ],
-  "settings": {}
+  "settings": {
+    "[git-commit]": {
+      "rewrap.autoWrap.enabled": true,
+      "rewrap.wrappingColumn": 72
+    },
+    "git.useEditorAsCommitInput": true,
+    // Completely obscure from file explorer
+    "files.exclude": {
+      "**/.git": false,
+    },
+    // Exclude from searches within the repo
+    "search.exclude": {
+      "**/.git": true,
+    },
+    // Exclude from file watcher processes
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true,
+    },
+  }
 }
