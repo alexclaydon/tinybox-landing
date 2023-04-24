@@ -9,7 +9,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
 
-import logoTinybox from '@/images/logos/tb_Logo.svg'
+import logoTinybox from '@/images/logos/tb_Logo-logotype.svg'
 
 function MobileNavLink({ href, children }) {
   return (
@@ -81,7 +81,6 @@ function MobileNavigation() {
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
             <MobileNavLink href="#features">Features</MobileNavLink>
-            <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="/login">Sign in</MobileNavLink>
           </Popover.Panel>
@@ -100,20 +99,14 @@ export function Header() {
             <Link href="#" aria-label="Home">
               <Image className="h-10 w-auto" src={logoTinybox} alt="Tinybox Logo" unoptimized />
             </Link>
-            <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-            </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
             </div>
-            <Button href="/register" color="teal">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
-              </span>
-            </Button>
+            <a href="/map" class="bg-[#00AA95] hover:bg-[#00FFDA] text-white font-bold py-2 px-4 rounded-full">
+            Try it now
+            </a>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>

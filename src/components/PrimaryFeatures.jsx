@@ -6,33 +6,33 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
 import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
+import screenshotPayroll from '@/images/screenshots/tb_Features01.png'
 import screenshotReporting from '@/images/screenshots/reporting.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Investigate.',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      "Explore our carefully designed layer sets such as safety or environment.",
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: 'Already found a neighbourhood you like?',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      "Enter the address on the map and make sure it suits your needs and there are no nasty surprises.",
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: 'Looking for a new neighbourhood?',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      "Use the map view, planning and layers to compare neighbourhoods on the metrics that matter to you: environmental,  liveability, safety/crime, etc.",
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: 'Want to go deeper?',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      'Our data is available in table view where it can be sorted, grouped and filtered however you like. We also make an API available for programmatic use.',
     image: screenshotReporting,
   },
 ]
@@ -58,25 +58,16 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Features for running your books"
-      className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
+      aria-label="Features finding the right neighbourhood."
+      className="pb-24 relative overflow-hidden bg-gradient-to-tr from-[#00FFDA] to-[#00AA95] ..."
     >
-      <Image
-        className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-        src={backgroundImage}
-        alt=""
-        width={2245}
-        height={1636}
-        unoptimized
-      />
       <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+        <div className="max-w-2xl md:mx-auto text-center xl:max-w-none">
+          <h2 className="pt-20 text-2xl tracking-tight text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
+          Take the guesswork out of finding the right neighbourhood.
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+          <p className="mt-6 text-lg tracking-tight text-teal-100">
+            Here you'll find all the tools you need to make informed discisions about your home or office surroundings.
           </p>
         </div>
         <Tab.Group
@@ -103,8 +94,8 @@ export function PrimaryFeatures() {
                           className={clsx(
                             'font-display text-lg [&:not(:focus-visible)]:focus:outline-none',
                             selectedIndex === featureIndex
-                              ? 'text-blue-600 lg:text-white'
-                              : 'text-blue-100 hover:text-white lg:text-white'
+                              ? 'text-teal-100 lg:text-white'
+                              : 'text-teal-100 hover:text-white lg:text-white'
                           )}
                         >
                           <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
@@ -116,7 +107,7 @@ export function PrimaryFeatures() {
                           'mt-2 hidden text-sm lg:block',
                           selectedIndex === featureIndex
                             ? 'text-white'
-                            : 'text-blue-100 group-hover:text-white'
+                            : 'text-teal-100 group-hover:text-white'
                         )}
                       >
                         {feature.description}
@@ -134,7 +125,7 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-teal-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
                         className="w-full"
                         src={feature.image}

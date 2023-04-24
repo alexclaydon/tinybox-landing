@@ -1,27 +1,23 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-
-import logoTinybox from '@/images/logos/tb_Logo.svg'
-import logoTypeTinybox from '@/images/logos/tb_Logotype.svg'
+import backgroundImage from '@/images/ni_BG.svg'
 
 export function Hero() {
   return (
-    <Container className="pb-16 sm:pb-16 pt-16 text-center lg:pt-32">
-      <div className="flex items-end mx-auto max-w-md sm:max-w-2xl px-4 sm:px-6 lg:px-8">
-        <div className="ml-auto mr-3 max-w-2xs sm:max-w-2xl">
-          <Image src={logoTinybox} alt="Tinybox Logo" width={475} unoptimized />
-        </div>
-        <div className="mx-auto max-w-2xl">
-          <Image src={logoTypeTinybox} alt="Tinybox Name" unoptimized />
-        </div>
+    <Container className="relative h-60 text-center">
+      <div className="absolute top-0 left-0 w-full h-full">
+        <Image
+          src={backgroundImage}
+          layout="fill"
+          objectFit="cover"
+          priority={true}
+          alt="Background Image"
+        />
       </div>
-      <h1 className="mx-auto pt-6 max-w-4xl font-display text-2xl font-medium tracking-tight text-slate-900 sm:text-5xl">
+      <h1 className="relative z-10 pt-10 text-4xl mx-auto font-bold tracking-tight text-slate-900 sm:text-4xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl">
         Neighbourhood Intelligence
       </h1>
-      <p className="mx-auto pt-4 mt-6 max-w-2xl text-lg sm:text-2xl tracking-tight text-slate-700">
-        Take the guesswork out of finding the right neighbourhood.
-      </p>
     </Container>
   )
 }

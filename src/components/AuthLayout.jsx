@@ -11,13 +11,8 @@ export function AuthLayout({ children }) {
             {children}
           </div>
         </div>
-        <div className="hidden sm:contents lg:relative lg:block lg:flex-1">
-          <Image
-            className="absolute inset-0 h-full w-full object-cover"
-            src={backgroundImage}
-            alt=""
-            unoptimized
-          />
+        <div className="bg-gradient-to-tr from-teal-400 to-teal-600 ... hidden sm:contents lg:relative lg:block lg:flex-1">
+          
         </div>
       </div>
     </>
