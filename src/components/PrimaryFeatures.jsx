@@ -63,7 +63,7 @@ export function PrimaryFeatures() {
     >
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto text-center xl:max-w-none">
-          <h2 className="pt-20 text-2xl tracking-tight text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
+          <h2 className="pt-10 lg:pt-20 text-2xl tracking-tight text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
           Take the guesswork out of finding the right neighbourhood.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-teal-100">
@@ -72,7 +72,7 @@ export function PrimaryFeatures() {
         </div>
         <Tab.Group
           as="div"
-          className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
+          className="mt-10 lg:mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
           vertical={tabOrientation === 'vertical'}
         >
           {({ selectedIndex }) => (
@@ -85,7 +85,7 @@ export function PrimaryFeatures() {
                       className={clsx(
                         'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6',
                         selectedIndex === featureIndex
-                          ? 'bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
+                          ? 'bg-[#00AA95] lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
                           : 'hover:bg-white/10 lg:hover:bg-white/5'
                       )}
                     >
