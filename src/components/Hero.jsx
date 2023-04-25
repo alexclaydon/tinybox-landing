@@ -5,7 +5,7 @@ import backgroundImage from '@/images/ni_BG.svg'
 
 export function Hero() {
   return (
-    <Container className="relative h-48 lg:h-60 text-center">
+    <Container className="relative overflow-hidden h-48 lg:h-60 text-center">
   <div className="absolute top-24 lg:top-28 w-[1216px] h-full -ml-20 lg:ml-0">
     <Image
       src={backgroundImage}
