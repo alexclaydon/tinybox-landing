@@ -1,4 +1,4 @@
-import logoTinybox from '@/images/logos/tb_Logo-logotype.svg';
+import logoTinybox from '@/images/logos/tb_Logo-Logotype.svg';
 import mapstyle from '@/styles/map_style.json';
 import React, { useEffect } from 'react';
 import * as mapboxgl from 'mapbox-gl';

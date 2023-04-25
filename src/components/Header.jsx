@@ -9,7 +9,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
 
-import logoTinybox from '@/images/logos/tb_Logo-logotype.svg'
+import logoTinybox from '@/images/logos/tb_Logo-Logotype.svg'
 
 function MobileNavLink({ href, children }) {
   return (
