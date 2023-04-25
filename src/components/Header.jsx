@@ -104,9 +104,9 @@ export function Header() {
             <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
             </div>
-            <a href="/map" class="bg-[#00AA95] hover:bg-[#00FFDA] text-white font-bold py-2 px-4 rounded-full">
+            <Link href="https://tinybox.ngrok.dev/map" class="bg-[#00AA95] hover:bg-[#00FFDA] text-white font-bold py-2 px-4 rounded-full">
             Try it now
-            </a>
+            </Link>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>

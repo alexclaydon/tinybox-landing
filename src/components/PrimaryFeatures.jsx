@@ -67,7 +67,7 @@ export function PrimaryFeatures() {
           Take the guesswork out of finding the right neighbourhood.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-teal-100">
-            Here you'll find all the tools you need to make informed discisions about your home or office surroundings.
+            Here you&apos;ll find all the tools you need to make informed discisions about your home or office surroundings.
           </p>
         </div>
         <Tab.Group

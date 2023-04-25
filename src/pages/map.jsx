@@ -28,9 +28,9 @@ return (
           <div className="flex-none">
             <Image className="py-4" src={logoTinybox} alt="tinybox" height={40}/>
           </div>
-          <a type="button" href="/index">
+          <Link type="button" href="/index">
             <Image src={Profile} alt="tinybox" height={45}/>
-          </a>
+          </Link>
         </div>
 <div class="mb-3">
   <div class="relative mt-4 mb-4 flex w-full flex-wrap items-stretch">
@@ -72,15 +72,15 @@ return (
   <div class="hidden sm:block">
     <div class="border-b border-gray-200">
       <nav class="-mb-px flex" aria-label="Tabs">
-        <a href="#" class="border-[#00AA95] text-[#00AA95] w-1/3 border-b-2 pb-4 px-1 text-center text-sm font-medium">
+        <Link href="#" class="border-[#00AA95] text-[#00AA95] w-1/3 border-b-2 pb-4 px-1 text-center text-sm font-medium">
         Environmental
-        </a>
-        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 w-1/3 border-b-2 pb-4 px-1 text-center text-sm font-medium">
+        </Link>
+        <Link href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 w-1/3 border-b-2 pb-4 px-1 text-center text-sm font-medium">
         Liveability
-        </a>
-        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 w-1/3 border-b-2 pb-4 px-1 text-center text-sm font-medium">
+        </Link>
+        <Link href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 w-1/3 border-b-2 pb-4 px-1 text-center text-sm font-medium">
         Safety
-        </a>
+        </Link>
       </nav>
     </div>
   </div>
