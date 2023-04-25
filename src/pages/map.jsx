@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import * as mapboxgl from 'mapbox-gl';
 import Image from 'next/image';
 import Profile from '@/images/btn_Profile.svg';
+import Link from 'next/link'
 
 const Home = () => {
   useEffect(() => {
@@ -28,7 +29,7 @@ return (
           <div className="flex-none">
             <Image className="py-4" src={logoTinybox} alt="tinybox" height={40}/>
           </div>
-          <Link type="button" href="/index">
+          <Link type="button" href="#">
             <Image src={Profile} alt="tinybox" height={45}/>
           </Link>
         </div>
