@@ -4,36 +4,28 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/tb_Features01.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import screenshot01 from '@/images/screenshots/tb_Features01.png'
+import screenshot02 from '@/images/screenshots/tb_Features02.png'
+import screenshot03 from '@/images/screenshots/tb_Features03.png'
 
 const features = [
   {
-    title: 'Investigate.',
+    title: 'Explore.',
     description:
-      "Explore our carefully designed layer sets such as safety or environment.",
-    image: screenshotPayroll,
+      "Tinybox helps you make informed decisions about where to live by providing comprehensive, easily digestible data about neighbourhoods.",
+    image: screenshot01,
   },
   {
     title: 'Already found a neighbourhood you like?',
     description:
-      "Enter the address on the map and make sure it suits your needs and there are no nasty surprises.",
-    image: screenshotExpenses,
+      "Enter the address to discover real estate and demographic trends, school ratings, transportation options, community facilities, crime rates and more.",
+    image: screenshot02,
   },
   {
     title: 'Looking for a new neighbourhood?',
     description:
-      "Use the map view, planning and layers to compare neighbourhoods on the metrics that matter to you: environmental,  liveability, safety/crime, etc.",
-    image: screenshotVatReturns,
-  },
-  {
-    title: 'Want to go deeper?',
-    description:
-      'Our data is available in table view where it can be sorted, grouped and filtered however you like. We also make an API available for programmatic use.',
-    image: screenshotReporting,
+      "Use the map view, planning and layers to compare neighbourhoods on the metrics that matter to you: unemployment rate, safety/crime, etc.",
+    image: screenshot03,
   },
 ]
 
@@ -59,7 +51,7 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features finding the right neighbourhood."
-      className="pb-24 relative overflow-hidden bg-gradient-to-tr from-[#00FFDA] to-[#00AA95] ..."
+      className="pb-24 relative overflow-hidden bg-[#00AA95]"
     >
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto text-center xl:max-w-none">
