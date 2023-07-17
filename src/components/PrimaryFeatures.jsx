@@ -24,7 +24,7 @@ const features = [
   {
     title: 'Looking for a new neighbourhood?',
     description:
-      "Use the map view, planning and layers to compare neighbourhoods on the metrics that matter to you: unemployment rate, safety/crime, etc.",
+      "Use the map view, planning and layers to compare neighbourhoods on the metrics that matter to you: school type and quality, open spaces, unemployment rate, safety, etc.",
     image: screenshot03,
   },
 ]
@@ -59,7 +59,7 @@ export function PrimaryFeatures() {
           Take the guesswork out of finding the right neighbourhood.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-teal-100">
-            Here you&apos;ll find all the tools you need to make informed discisions about your home or office surroundings.
+            Here you&apos;ll find all the tools you need to make informed decisions about your home or office surroundings.
           </p>
         </div>
         <Tab.Group
