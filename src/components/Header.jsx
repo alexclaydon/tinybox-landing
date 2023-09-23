@@ -104,7 +104,7 @@ export function Header() {
               <NavLink href="/login">Sign in</NavLink>
             </div> */}
             <Link href="https://www.youtube.com/watch?v=qpFd2oDRVgU" class="sm:w-24 sm:text-sm w-22 text-xs bg-[#00AA95] hover:bg-[#00FFDA] text-white font-bold py-2 px-4 rounded-full">
-            Video Demo
+            Video
             </Link>
             <div className="-mr-1 md:hidden">
               {/* <MobileNavigation /> */}
