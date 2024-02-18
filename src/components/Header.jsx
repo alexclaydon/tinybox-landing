@@ -96,19 +96,34 @@ export function Header() {
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <Image className="sm:h-12 h-8 w-auto" src={logoTinybox} alt="Tinybox Logo" unoptimized />
+              <Image
+                className="h-8 w-auto sm:h-12"
+                src={logoTinybox}
+                alt="Tinybox Logo"
+                unoptimized
+              />
             </Link>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Link href="mailto:hello@tinybox.app" class="text-xs sm:text-sm w-24 text-center bg-[#00AA95] hover:bg-[#00FFDA] text-white font-bold py-2 px-4 rounded-full">
-            Contact
+            <Link
+              href="mailto:hello@tinybox.app"
+              class="w-24 rounded-full bg-[#00AA95] px-4 py-2 text-center text-xs font-bold text-white hover:bg-[#00FFDA] sm:text-sm"
+            >
+              Contact
             </Link>
-            <Link href="https://www.youtube.com/watch?v=qpFd2oDRVgU" class="text-xs sm:text-sm w-24 text-center bg-[#00AA95] hover:bg-[#00FFDA] text-white font-bold py-2 px-4 rounded-full">
-            Demo
+            <Link
+              href="https://www.youtube.com/watch?v=qpFd2oDRVgU"
+              class="w-24 rounded-full bg-[#00AA95] px-4 py-2 text-center text-xs font-bold text-white hover:bg-[#00FFDA] sm:text-sm"
+            >
+              Video
             </Link>
-            <div className="-mr-1 md:hidden">
-              {/* <MobileNavigation /> */}
-            </div>
+            <Link
+              href="https://tinybox-c7a54.ondigitalocean.app/world/map/"
+              class="w-24 rounded-full bg-[#00AA95] px-4 py-2 text-center text-xs font-bold text-white hover:bg-[#00FFDA] sm:text-sm"
+            >
+              Try It
+            </Link>
+            <div className="-mr-1 md:hidden">{/* <MobileNavigation /> */}</div>
           </div>
         </nav>
       </Container>
